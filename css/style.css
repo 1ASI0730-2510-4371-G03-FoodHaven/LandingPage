@@ -13,13 +13,17 @@
 }
 
 .btn-outline-light {
-  background-color: var(--first-color) !important;
+  background-color: var(
+    --first-color
+  ) !important; 
   border-color: var(--first-color) !important;
   color: #fff !important;
 }
 
 .btn-outline-light:hover {
-  background-color: var(--second-color) !important;
+  background-color: var(
+    --second-color
+  ) !important;
   border-color: var(--second-color) !important;
   color: #fff !important;
 }
@@ -51,7 +55,7 @@
 }
 
 .hero-section {
-  background: url(../images/fondo_comida.JPG) no-repeat center;
+  background: url(/images/portada.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
 }
@@ -73,14 +77,14 @@
 }
 
 .hero-section h3 {
-  font-size: 80px;
+  font-size: 80px; 
   font-weight: 700;
   color: white;
   text-align: center;
 }
 
 .hero-section p {
-  font-size: 1rem;
+  font-size: 1rem; 
   font-weight: 400;
   color: white;
   text-align: center;
@@ -189,34 +193,38 @@
   color: black;
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 @media (min-width: 992px) {
   .nav-link::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 0;
-      height: 2px;
-      background-color: var(--first-color);
-      visibility: hidden;
-      transition: 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--first-color);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
   }
 
   .nav-link:hover::before,
   .nav-link.active::before {
-      width: 100%;
-      visibility: visible;
+    width: 100%;
+    visibility: visible;
   }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+}
 
 .mision p,
 .quien p {
@@ -243,7 +251,6 @@
 .texto-reseña p {
   color: black;
 }
-
 .bg-gray {
   background-color: gray;
 }
@@ -263,9 +270,9 @@
   position: relative;
   overflow: hidden;
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto; 
   padding: 3rem 1rem;
-  border-radius: 40px;
+  border-radius: 40px; 
   margin-top: 20px;
 }
 
@@ -341,16 +348,15 @@
 
 @media (max-width: 768px) {
   .acerca-contenido {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .acerca-img {
-      display: none;
-      /* esto oculta el lomo saltado en el responsive cuando sea pequeño */
+    display: none; /* esto oculta el lomo saltado en el responsive cuando sea pequeño */
   }
 
   .acerca-texto {
-      flex: 1 1 100%;
+    flex: 1 1 100%;
   }
 }
 
@@ -393,9 +399,9 @@
 }
 
 .precio-card .card-title {
-  white-space: normal !important;
+  white-space: normal !important; 
   overflow: visible !important;
-  text-overflow: unset !important;
+  text-overflow: unset !important; 
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.2;
@@ -420,14 +426,126 @@
 
 @media (max-width: 576px) {
   .precio-card {
-      padding: 25px 15px;
+    padding: 25px 15px;
   }
 
   .precio-card .card-title {
-      font-size: 1.1rem;
+    font-size: 1.1rem;
   }
 
   .precio-card .price {
-      font-size: 1.1rem;
+    font-size: 1.1rem;
   }
+}
+
+/* General Responsive Utilities */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hero Section Adaptability */
+.hero-section h3 {
+  font-size: 4rem;
+}
+.hero-section p {
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .hero-section h3 {
+    font-size: 2.5rem;
+  }
+  .hero-section p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+
+/* Card Services Responsive */
+.servicio .card-title {
+  font-size: 1.3rem;
+}
+.servicio .card-text {
+  font-size: 1rem;
+}
+@media (max-width: 576px) {
+  .servicio .card-title {
+    font-size: 1.1rem;
+  }
+  .servicio .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Precios Cards */
+@media (max-width: 768px) {
+  .precio-card {
+    padding: 2rem;
+  }
+}
+
+/* Footer: stack columns in small screens */
+@media (max-width: 768px) {
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+button,
+.signin-button,
+.portada-button,
+.login-button {
+  width: auto;
+  max-width: 100%;
+  font-size: 1rem;
+}
+@media (max-width: 576px) {
+  .signin-button,
+  .portada-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+.container {
+  padding: 0 1rem;
+}
+
+.login-section {
+  min-height: 100vh;
+  background-color: white;
+  padding: 2rem;
+}
+
+.login-box {
+  background-color: #f9f9f9;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.login-box h2 {
+  color: var(--first-color);
+}
+
+.login-box .form-control {
+  border-radius: 10px;
+}
+
+.login-box .form-label {
+  color: var(--second-color);
+}
+
+.login-box .signin-button {
+  background-color: var(--first-color);
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: 0.3s background-color;
+}
+
+.login-box .signin-button:hover {
+  background-color: var(--second-color);
 }
