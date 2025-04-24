@@ -551,6 +551,12 @@ button,
   background-color: var(--second-color);
 }
 
+.login-box .adv {
+  font-size: small;
+  color: rgb(180, 13, 13);
+  font-weight: bold;
+}
+
 @media (max-width: 991px){
   .login-button {
     display: none !important;
