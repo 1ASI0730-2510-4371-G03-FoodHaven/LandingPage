@@ -55,9 +55,9 @@
 }
 
 .hero-section {
-  background: url(/images/portada.jpg) no-repeat center;
+  background-image: url(../images/fondoComida.jpg); /* en minúsculas */
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
 }
 
 .hero-section::before {
@@ -130,13 +130,14 @@
 .navbar-toggler {
   border: none;
   font-size: 1.25rem;
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231565C0' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23307d33' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+
 .navbar-toggler:hover {
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2342A5F5' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  transition: 0.3s ease-in-out;
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2353c758' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 
 .navbar-toggler:focus,
 .btn-close:focus {
@@ -218,9 +219,14 @@
     width: 100%;
     visibility: visible;
   }
+
+
 }
 
+
+
 @media (min-width: 1200px) {
+  
 }
 
 @media (min-width: 1400px) {
@@ -255,13 +261,8 @@
   background-color: gray;
 }
 
-.hero-section {
-  background-image: url(/images/fondo_comida.jpg);
-  background-repeat: no-repeat;
-}
-
 .footer {
-  background-image: url(/images/fondo_comida2.avif);
+  background-image: url(../images/fondoComida2.avif); /* en minúsculas */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -548,4 +549,10 @@ button,
 
 .login-box .signin-button:hover {
   background-color: var(--second-color);
+}
+
+@media (max-width: 991px){
+  .login-button {
+    display: none !important;
+  }
 }
