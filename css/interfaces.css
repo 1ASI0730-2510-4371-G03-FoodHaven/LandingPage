@@ -1,0 +1,92 @@
+/* ============================
+   FoodHeaven - Interfaces Pages
+   ============================ */
+
+/* --- General Layout --- */
+body.background {
+    background-color: #000;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Container Styling --- */
+.container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(21, 101, 192, 0.3);
+}
+
+/* --- Typography --- */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: var(--second-color);
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--second-color);
+    padding-left: 1rem;
+}
+
+p, li {
+    font-size: 1.125rem;
+    line-height: 1.9;
+    color: #e0e0e0;
+}
+
+ul {
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+/* --- Links --- */
+a {
+    color: var(--second-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--third-color);
+}
+
+/* --- Responsive Enhancements --- */
+@media (max-width: 768px) {
+    .container {
+        margin: 2rem 1rem;
+        padding: 2rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p, li {
+        font-size: 1rem;
+    }
+}
